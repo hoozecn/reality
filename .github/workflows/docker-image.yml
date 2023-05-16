@@ -19,4 +19,4 @@ jobs:
         password: ${{ secrets.DOCKERIO_PASSWORD }}
         logout: false
     - name: Build the Docker image
-      run: make
+      run: docker buildx create --use && make
