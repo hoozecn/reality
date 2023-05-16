@@ -1,5 +1,5 @@
 log:
-  loglevel: info
+  loglevel: warn
 inbounds:
   - port: {{.HTTP_PORT}}
     listen: 0.0.0.0

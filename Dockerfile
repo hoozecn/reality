@@ -1,7 +1,7 @@
 FROM --platform=$BUILDPLATFORM golang:1.20.4-alpine3.18 as build
 RUN apk add git make
 WORKDIR /app
-ARG XRAY_VERSION=v1.8.1
+ARG XRAY_VERSION=latest
 ARG TARGETOS
 ARG TARGETARCH
 RUN git clone https://github.com/XTLS/Xray-core -b ${XRAY_VERSION} && \
