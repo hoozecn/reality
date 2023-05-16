@@ -16,6 +16,7 @@ jobs:
       with:
         registry: docker.io
         username: hoozecn
-        password: ${{ secrets.dockerio_password }}
+        password: ${{ secrets.DOCKERIO_PASSWORD }}
+        logout: false
     - name: Build the Docker image
       run: make
